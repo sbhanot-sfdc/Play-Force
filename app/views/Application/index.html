@@ -1,0 +1,32 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<h1>Force.com Sample</h1>
+
+<p>This sample shows how to create a simple Play application that uses OAuth 2.0 and the Force.com REST API to connect with Force.com</p>
+
+#{if accounts}
+
+<h2> Accounts </h2>
+	<table>
+	#{list items:accounts, as:'acct'}
+		<tr>
+			<td>
+				<h4>${acct.Name}</h4>
+			</td>			 
+			<td>
+				<h4>${acct.AccountNumber}</h4>
+			</td>
+			<td>
+				<h4>${acct.NumberOfEmployees}</h4>
+			</td>			
+		</tr>	
+	#{/list}
+	</table>
+<br/>
+<a href="@{sforceLogout()}">Logout</a>
+
+#{/if}
+#{else}
+<a href="@{sforceLogin()}">Login</a>
+#{/else}
