@@ -1,7 +1,7 @@
 Sample Play application that integrates with Force.com
 =================================
 
-This is a simple demo Play application that integrates with Force.com using OAuth 2.0 and the REST API. Additional details about the application can be found here- .
+This is a simple demo Play application that integrates with Force.com using OAuth 2.0 and the REST API. Additional details about the application can be found here- http://blogs.developerforce.com/developer-relations/2011/08/play-ing-in-java.html.
 
 PRE-REQUISITES
 --------------
